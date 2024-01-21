@@ -1,0 +1,139 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dec8a0;
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #d56032;
+  }
+  
+  .active {
+    background-color: #d59c32;
+  }
+
+
+.registration-container {
+    background-color: #FDF4E9;
+    border: 3px solid #e9ded0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-indent: 0px;
+    align-items: center;
+    margin-bottom: 0px;
+    text-align: justify;
+    box-shadow: 10px 5px 5px #cdb993;
+}
+
+  .main-container {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .table-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(7, 1fr);
+    border-collapse: collapse;
+    margin-top: 0px;
+  }
+  
+  .table-cell {
+    border: 1px solid #e9ded0;
+    padding: 5px;
+  }
+  
+  .table-cell:nth-child(1),
+  .table-cell:nth-child(2),
+  .table-cell:nth-child(3),
+  .table-cell:nth-child(4),
+  .table-cell:nth-child(5),
+  .table-cell:nth-child(6),
+  .table-cell:nth-child(7) {
+    font-weight: bold;
+  }
+  
+
+  .about-me {
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .about-me-content {
+    background-color: #FDF4E9;
+    border: 3px solid #e9ded0;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    text-indent: 20px;
+    align-items: center;
+    margin-bottom: 0px;
+    text-align: justify;
+    box-shadow: 10px 5px 5px #cdb993;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+label, select, input {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 25%;
+}
+
+  .about-me-content h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .about-me-content p {
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #backToTop {
+        font-size: 16px;
+        padding: 10px 10px;
+        transform: translateX(100%);
+    }
+}

@@ -1,0 +1,122 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dec8a0;
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #d56032;
+  }
+  .active {
+    background-color: #d59c32;
+  }
+
+
+.container-price {
+    background-color: #FDF4E9;
+    border: 3px solid #e9ded0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 5px #cdb993;
+
+}
+.price-break {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.important {
+    font-weight: bold;
+}
+
+  .container {
+    background-color: #FDF4E9;
+    border: 3px solid #e9ded0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 5px 5px #cdb993;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cards {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card {
+    border: 1px solid #e9ded0;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+}
+.card ul {
+  background-color: #FDF4E9;
+  padding-left: 20px;
+  list-style-type: disc; /* fekete pontok (disc) a felsorolás elején, ismét tanultam valamit*/
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-price {
+    flex-direction: column;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+ 

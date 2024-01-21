@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Történelem érettségi felkészítés</title>
+
+    <link rel="stylesheet" type="text/css" href="Tortenelem_style.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <ul class="sidenav">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="groups.html">Csoportok</a></li>
+    <li><a href="prices.html">Árak</a></li>
+    <li><a href="about.html">Bemutatkozás</a></li>
+    <li><a href="jelentkezes.html">Jelentkezés</a></li>
+    <li><a href="select.html">Lekérdezés</a></li>
+  </ul>
+
+        <div class="header-box">
+          <h1>Történelem érettségi felkészítés</h1>
+        </div>
+        
+        <div class="about-us">
+          <div class="about-us-content">
+            <h3>Miért minket válassz?</h3>
+            <br><br>
+              <p> <b>Szombati szemináriumok</b> <b>Budapest</b>en és három megyei jogú városban: <b>Eger, Miskolc, Debrecen</b>. 
+              <p> <b>Szombati oktatás esetén</b> a 12. osztályos, végzős diákok alkalmanként négy órás képzésben tanulnak 9:00 és 13:00 között, 30-40 fős csoportokban.</p>
+              <p>A 11. osztályos diákok alkalmanként három órás képzésben tanulnak 10:00 és 13:00 között, 20-30 fős csoportokban.</p>
+              <p> <b>Online oktatás, E-learning:</b> Szervezetünk saját online oktatási felületére heti rendszerességgel töltünk fel feladatokat és teszteket, melyeket mi magunk javítunk azon diákjaink részére, akik a távolság miatt nem tudják megoldani, hogy részt vegyenek a szemináriumi képzésen.</p>
+              <p>Az egyes típusú csoportok csak megfelelő jelentkezőszám esetén indulnak!</p>
+          </div>
+        </div>
+        
+        <div class="work-preview">
+          <div class="box">
+            <h3>Betekintés a munkánkba</h3>
+            <div class="video-container">
+              <a href="https://www.youtube.com/watch?v=70js2oDeYmg" target="_blank">
+                <img src="youtube.jpg" alt="Video thumbnail" height="250" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Betekintés a munkánkba</h3>
+            <div class="video-container">
+              <a href="https://www.youtube.com/watch?v=70js2oDeYmg" target="_blank">
+                <img src="youtube.jpg" alt="Video thumbnail" height="250" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <h3>Betekintés a munkánkba</h3>
+            <div class="video-container">
+              <a href="https://www.youtube.com/watch?v=70js2oDeYmg" target="_blank">
+                <img src="youtube.jpg" alt="Video thumbnail" height="250" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-box">
+    <h2>Kapcsolat</h2>
+    
+    <div class="contact-info">
+      <a href="mailto:szopko.robert@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="tel:+36709427769">
+        <i class="fas fa-phone"></i> Hívj fel!
+      </a>
+    </div>
+    
+   
+    <hr>
+    <div class="contact-form">
+      <p>Keress bátran, ha kérdésed van:</p>
+      <input type="text" placeholder="Név" required>
+      <input type="email" placeholder="Email cím" required>
+      <textarea placeholder="Üzenet" required></textarea>
+      <button type="submit">Küldés</button>
+    </div>
+  </div>
+
+  <div id="popup">
+    <p>Feliratkozom a hírlevélre!</p>
+    <div id="popup-buttons">
+      <button class="yes-button" onclick="subscribe()">Igen</button>
+      <button class="no-button" onclick="closePopup()">Nem</button>
+    </div>
+  </div>
+  
+  <script>
+  // Az ablak megjelenítése oldalbetöltéskor
+  window.onload = function() {
+    document.getElementById("popup").style.display = "block";
+  }
+  
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+  
+  function subscribe() {
+    alert("Köszönjük a feliratkozást!");
+    closePopup();
+  }
+  </script>
+  
+  <button id="backToTop">Vissza a lap tetejére!</button>   
+
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTop").style.display = "block";
+      } else {
+        document.getElementById("backToTop").style.display = "none";
+      }
+    }
+
+    document.getElementById("backToTop").addEventListener("click", function() {
+      document.documentElement.scrollTop = 0;
+    });
+  </script>
+
+
+</body>
+</html>

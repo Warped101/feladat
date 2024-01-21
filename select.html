@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekérdezés</title>
+
+    <link rel="stylesheet" type="text/css" href="jelentkezes.css"/>
+
+
+</head>
+<body>
+    <ul class="sidenav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="groups.html">Csoportok</a></li>
+        <li><a href="prices.html">Árak</a></li>
+        <li><a href="about.html">Bemutatkozás</a></li>
+        <li><a href="jelentkezes.html">Jelentkezés</a></li>
+        <li><a class="active" href="select.html">Lekérdezés</a></li>
+      </ul>
+    
+      <div class="about-me">
+        <div class="about-me-content">
+          <h3>Lekérdezés</h3>
+          
+          <form action="process_select.php" method="post">
+            <label for="felhasznalonev">Felhasználónév:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="jelszo">Jelszó:</label>
+            <input type="password" id="pass" name="pass" required>
+
+            <button type="submit" value="Regisztráció">Belépés</button>
+    
+        </form>
+
+        
+
+        </div>
+
+</body>
+</html>
